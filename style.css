@@ -8,6 +8,12 @@
     text-shadow: 4px 4px 4px #aaa;
   }
 
+  .image {
+    background-image: url(./image.jpg );
+    
+
+  }
+
   h1 {
     text-align: center;
     margin-top: 50px;
@@ -27,7 +33,7 @@
     margin: 0 auto;
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #0CBABA;
+    background-color: #29163d70;
     color: #fff;
     border: none;
     border-radius: 3px;

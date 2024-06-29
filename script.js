@@ -1,32 +1,32 @@
 
 let intentos = 6;
-let diccionario = ['PERLA', 'PERAS', 'CARRO', 'LUJOS', 'LOBOS', 'LUCIA', 'NICOL', 'AVION', 'VOLAR', 'JUEGO']
+//let diccionario = ['PERLA', 'PERAS', 'CARRO', 'LUJOS', 'LOBOS', 'LUCIA', 'NICOL', 'AVION', 'VOLAR', 'JUEGO']
 
 //La libreria Math sirve para contar cuantos elementos son los que estan 
 //dentro del arreglo y comenzar a autoseleccionar cual de estas es la palabra oculta
-let palabra = diccionario[Math.floor(Math.random() * diccionario.length)];
-console.log(palabra);
+//let palabra = diccionario[Math.floor(Math.random() * diccionario.length)];
+//console.log(palabra);
 
 //Aca utilizo una API para aleatorizar las palabras para el wordle (Las palabras estan en ingles)
-// fetch('https://random-word-api.herokuapp.com/word?length=5&lang=en')
-//  	.then(response => response.json())
-//  	.then(response => {
-//          console.log(response)
-//          palabra = response[0].toUpperCase()
-//      })
-//  	.catch(err => console.error(err));
+fetch('https://random-word-api.herokuapp.com/word?length=5&lang=en')
+    .then(response => response.json())
+    .then(response => {
+    console.log(response)
+        palabra = response[0].toUpperCase()
+    })
+    .catch(err => console.error(err));
 
-// window.addEventListener('load', init)
-// function init(){
-//     console.log('Esto se ejecuta solo cuando se carga la pagina web')
-// }
+    window.addEventListener('load', init)
+    function init(){
+    console.log('Esto se ejecuta solo cuando se carga la pagina web')
+    }
 
 //La funcion intentar aparece en el tutorial sin embargo
 //le hice una serie de modificaciones para que funcione correctamente 
 function intentar(){
     const INTENTO = leerIntento();
     if (INTENTO === palabra ) {
-        terminar("<h1>GANASTE</h1>");
+        terminar("<h1>GANASTE </h1>");
         //La funcion mostrarPalabraCorrecta(), esta para mostrar la palabra que escribiste y te dio la victoria
         mostrarPalabraCorrecta();
         return
