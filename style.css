@@ -1,61 +1,70 @@
-/*body {
-  font-family: Arial, sans-serif;
-  }*/
+body {
+  font-family: "Tangerine", serif;
+  font-size: 20px;
+  text-shadow: 4px 4px 4px #aaa;
+  background-image: url('./48170.jpg');
+  background-size: cover; /* Hace que la imagen de fondo cubra toda la pantalla */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  background-attachment: fixed; /* Hace que la imagen de fondo permanezca fija en su posición */
+  background-position: center; /* Centra la imagen de fondo */
 
-  body {
-    font-family: 'Tangerine', serif;
-    font-size: 20px;
-    text-shadow: 4px 4px 4px #aaa;
-  }
+  display: flex; /* Utiliza flexbox */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Asegura que el body ocupe toda la altura de la pantalla */
+  margin: 0; /* Elimina márgenes */
+}
 
-  .image {
-    background-image: url(./image.jpg );
-    
+.container {
+  text-align: center; /* Centra el texto dentro del contenedor */
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para el contenedor */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+}
 
-  }
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  color: #fff;
+}
 
-  h1 {
-    text-align: center;
-    margin-top: 50px;
-  }
-  
-  #guess-input {
-    display: block;
-    margin: 0 auto 20px;
-    padding: 10px;
-    font-size: 18px;
-    width: 250px;
-    border: 1px solid #ccc;
-  }
-  
-  #guess-button {
-    display: block;
-    margin: 0 auto;
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #29163d70;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-  }
-  
-  button:active {
-      transform: scale(0.95);
-  }
-  
-  .letter {
-      border: 1px solid rgba(15, 15, 15, 0.849);
-      padding: 3px;
-      margin: 3px;
-      min-width: 20px;
-      text-align: center;
-      display: inline-block
-  }
-  
-  .row{
-      margin-bottom: 10px;
-  }
-  
-  .input-area{
-      margin: 30px;
-  }
+#guess-input {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px;
+  font-size: 18px;
+  width: 250px;
+  border: 1px solid #ccc;
+}
+
+#guess-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #29163d70;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.letter {
+  border: 1px solid rgba(15, 15, 15, 0.849);
+  padding: 3px;
+  margin: 3px;
+  min-width: 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+.row {
+  margin-bottom: 10px;
+}
+
+.input-area {
+  margin: 30px;
+}

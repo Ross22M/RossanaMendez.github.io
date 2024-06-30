@@ -1,5 +1,5 @@
 
-let intentos = 6;
+//let intentos = 6;
 //let diccionario = ['PERLA', 'PERAS', 'CARRO', 'LUJOS', 'LOBOS', 'LUCIA', 'NICOL', 'AVION', 'VOLAR', 'JUEGO']
 
 //La libreria Math sirve para contar cuantos elementos son los que estan 
@@ -88,4 +88,5 @@ function terminar(mensaje){
 
 //Esta linea de codigo fue implementada para el arreglo que contiene mas de un dato tipo texto
 Math.floor(Math.random() * 10) + 1;
+
 
